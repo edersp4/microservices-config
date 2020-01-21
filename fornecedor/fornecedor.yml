@@ -1,7 +1,7 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_arq?useTimezone=true&serverTimezone=UTC
+    url: jdbc:postgresql://localhost:5432/fornecedor
     username: root
     password: root
 
@@ -9,4 +9,4 @@ spring:
     hibernate.ddl-auto: create
     generate-ddl: true
     show-sql: true
-    properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
